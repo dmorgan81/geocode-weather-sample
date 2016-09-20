@@ -1,0 +1,41 @@
+{
+  "name": "geocode-weather-sample",
+  "author": "MakeAwesomeHappen",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {
+    "enamel": "^1.2.1",
+    "pebble-generic-weather": "^1.1.2",
+    "pebble-geocode-mapquest": "^1.0.1"
+  },
+  "pebble": {
+    "displayName": "geocode-weather-sample",
+    "uuid": "6814da28-ebba-42a8-bf51-430a00f42a31",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+      "APP_READY",
+      "WEATHER_KEY",
+      "WEATHER_UNIT",
+      "WEATHER_INTERVAL",
+      "WEATHER_PROVIDER",
+      "USE_GPS",
+      "LOCATION_NAME"
+    ],
+    "resources": {
+      "media": []
+    }
+  }
+}
