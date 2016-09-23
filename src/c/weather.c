@@ -180,7 +180,7 @@ void weather_init(void) {
 
     strncpy(s_location_name, enamel_get_LOCATION_NAME(), sizeof(s_location_name));
     GeocodeMapquestCoordinates *coordinates = geocode_peek();
-    if (coordinates == NULL || strlen(s_location_name) == 0) {
+    if (enamel_get_USE_GPS() || coordinates == NULL || strlen(s_location_name) == 0) {
         generic_weather_set_location(GENERIC_WEATHER_GPS_LOCATION);
     } else {
         generic_weather_set_location((GenericWeatherCoordinates) {
